@@ -105,7 +105,8 @@ span {
 }
 
 .home-img img {
-    width: 35vw;
+    width: 30vw;
+    margin-left: 2rem;
 
 }
 .home-content p{
