@@ -38,7 +38,7 @@ ScrollReveal({
     delay: 200
  });
 
- ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
- ScrollReveal().reveal('.home-img, .skills-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ ScrollReveal().reveal('.home-content, .heading, .portfolio-box', { origin: 'top' });
+ ScrollReveal().reveal('.home-img, .skills-container, .contact form', { origin: 'bottom' });
  ScrollReveal().reveal('.about-img, .home-content h1', { origin: 'left' });
- ScrollReveal().reveal('.about-content, .home-content p', { origin: 'right' });
+ ScrollReveal().reveal('.about-content, .home-content p, .safe-box', { origin: 'right' });
