@@ -44,6 +44,7 @@ section {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    /* z-index: 1; */
 }
 
 .header.sticky {
@@ -179,7 +180,7 @@ span {
 }
 
 .about-img img{
-    width: 35vw;
+    width: 30vw;
 
 }
 
@@ -246,11 +247,11 @@ span {
     margin: 1rem 0 3rem;
 }
 
-.portfolio {
+.Project {
     background: var(--second-bg-color);
 }
 
-.portfolio h2{
+.Project h2{
     margin-bottom: 4rem;
 }
 
@@ -271,11 +272,30 @@ span {
 
 }
 
+.portfolio-container .safe-box{
+    position: relative;
+    border-radius: 2rem;
+    left: 25rem;
+    box-sizing: 0 0 2rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+
+}
+
 .portfolio-box img{
     width: 100%;
 }
 
+.safe-box img{
+    width: 100%;
+}
+
 .portfolio-box:hover img{
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.safe-box:hover img{
     transform: scale(1.1);
     transition: .5s ease;
 }
@@ -298,16 +318,46 @@ span {
     
 }
 
+.safe-box .safe-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1),var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    
+}
+
 .portfolio-box:hover .portfolio-layer{
     transform: translateY(0);
 
 }
+.safe-box:hover .safe-layer{
+    transform: translateY(0);
 
+}
 .portfolio-layer h4{
     font-size: 3rem;
 }
 
+.safe-layer h4{
+    font-size: 3rem;
+}
+
 .portfolio-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.safe-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
@@ -323,6 +373,21 @@ span {
 }
 
 .portfolio-layer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.safe-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.safe-layer a i{
     font-size: 2rem;
     color: var(--second-bg-color);
 }
